@@ -9,7 +9,7 @@ Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 11.1
 WC tested up to: 11.2
-Version: 1.0.3
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: purple
@@ -335,7 +335,8 @@ body {
  * aria-expanded state. Scoped to scripting: enabled so no-JS visitors
  * keep the all-panels-open fallback. */
 @media (scripting: enabled) {
-	.wp-block-accordion-heading:has([aria-expanded="false"]) + .wp-block-accordion-panel {
+	.wp-block-accordion-heading:has([aria-expanded="false"])
+		+ .wp-block-accordion-panel {
 		height: 0;
 		overflow: visible clip;
 	}
